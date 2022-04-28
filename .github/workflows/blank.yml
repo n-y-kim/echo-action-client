@@ -6,13 +6,13 @@ name: use echo action
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: n-y-kim/echo-action-server@master
+      - uses: n-y-kim/echo-action-server@main
         with:
           say: Hi Nayeon!
